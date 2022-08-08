@@ -1,10 +1,32 @@
----
-title: 常見問題
-layout: ./app/layout.ejs
-engine: ejs
-current: FAQ
----
-<main class="my-80 mt-md-40 mb-sm-64 FAQ">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Glasses | 常見問題</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo"><a href="./index.html">Glasses</a></h1>
+      <ul class="menu">
+          <li><a href="./optical.html">系列鏡框</a></li>
+          <li><a href="./location.html">門市據點</a></li>
+          <li><a href="./blog.html">部落格</a></li>
+          <li><a href="./FAQ.html">常見問題</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="my-80 mt-md-40 mb-sm-64 FAQ">
   <div class="container">
       <h2 class="border-left border-8 border-primary pl-16 fz-48 fz-sm-24 lh-72 lh-sm-36 mb-32 mb-sm-24 fw-700">常見問題</h2>
       <h3 class="fz-24 lh-36 fw-700 mb-24">我想詢問配鏡問題</h3>
@@ -57,3 +79,46 @@ current: FAQ
       </ul>
   </div>
 </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer">
+          <div>
+              <ul class="footer-menu">
+                  <li><a href="./index.html">首頁</a></li>
+                  <li><a href="./optical.html">系列鏡框</a></li>
+                  <li><a href="./location.html">門市據點</a></li>
+                  <li><a href="./blog.html">部落格</a></li>
+                  <li><a href="./FAQ.html">常見問題</a></li>
+              </ul>
+              <ul class="contact">
+                  <li>
+                      <span class="material-symbols-outlined">call</span>
+                      <a href="#">0800-000-000</a>
+                  </li>
+                  <li>
+                      <span class="material-symbols-outlined">mail</span>
+                      <a href="#">glasses@business.com</a>
+                  </li>
+              </ul>
+          </div>
+          <ul class="social">
+              <li><a href="#" class="facebook"></a></li>
+              <li><a href="#" class="instagram"></a></li>
+              <li><a href="#" class="line"></a></li>
+          </ul>
+      </div>
+      <div class="copyright">
+          <p>Copyright © 2020 Glasses.All rights reserved.</p>
+          <ul>
+              <li><a href="#">隱私權政策</a></li>
+              <li><a href="#">服務條款</a></li>
+          </ul>
+      </div>
+  </div>
+  </footer>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
