@@ -1,0 +1,343 @@
+section {
+	padding: 80px 0;
+	@include mobile(){
+		padding: 40px 0;
+	}
+}
+
+h2.section-title {
+	color: #650300;
+	font-size: 48px;
+	line-height: 72px;
+	text-align: center;
+	font-weight: 700;
+	margin-bottom: 48px;
+	@include mobile(){
+		font-size: 24px;
+		line-height: 36px;
+		margin-bottom: 24px;		
+	}
+}
+
+/* banner */
+.banner {
+	padding-top: 296px;
+	padding-bottom: 296px;
+	background-image: url(../images/home-header.png);
+	background-size: cover;
+	background-position: center;
+	@include pad(){
+		background-image: url(../images/home-header-sm.png);
+	}
+	@include mobile(){
+		padding-top: 144px;
+		padding-bottom: 144px;
+	}
+	.container {
+		text-align: right;
+		color: #650300;
+		p {
+			font-size: 36px;
+			line-height: 54px;
+			font-weight: 400;
+			@include mobile(){
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+		h2 {
+			font-size: 64px;
+			line-height: 96px;
+			font-weight: 700;
+			margin-bottom: 4px;
+			text-align: right;
+			@include mobile(){
+				font-size: 24px;
+				line-height: 36px;
+				margin-bottom: 8px;
+			}
+		}
+		button {
+			padding: 6px 12px;
+			font-size: 20px;
+			line-height: 30px;
+			font-weight: 500;
+			color: #fff;
+			background-color: #AA0601;
+			border: none;
+			cursor: pointer;
+			&:hover{
+				background-color: #650300;
+			}
+	 }
+	}
+}
+
+
+/* profession */
+.profession {
+	background-color: #FBF2F2;
+	h2 {
+		margin-bottom: 0px;
+	}
+	ul {
+		display: flex;
+		justify-content: space-between;
+		margin-left: -12px;
+		margin-right: -12px;
+		@include pad(){
+			flex-wrap: wrap;
+		}
+		li {
+			width: 25%;
+			margin-left: 12px;
+			margin-right: 12px;
+			margin-top: 24px;
+			text-align: center;
+			@include pad(){
+				width: calc(50% - 24px);
+			}
+			@include mobile(){
+				width: 100%;
+			}
+			img {
+				width: 100px;
+				margin-bottom: 16px;
+			}
+		}
+	}
+	h3 {
+		color:#650300;
+		font-size: 24px;
+		line-height: 36px;
+		font-weight: 700;
+		margin-bottom: 8px;
+	}
+	p {
+		text-align: left;
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+
+/* collection */
+.collection ul{
+	display: flex;
+	justify-content: space-between;
+	margin-left: -12px;
+	margin-right: -12px;
+	@include pad(){
+		flex-direction: column;
+		align-items: center;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	li {
+		width: 33.33%;
+		margin-left: 12px;
+		margin-right: 12px;
+		@include pad(){
+			width: 336px;
+			margin-top: 24px;
+		}
+		@include mobile(){
+			width: 100%;
+		}
+		h3 {
+			margin-top: 8px;
+			font-size: 48px;
+			line-height: 72px;
+			font-weight: 900;
+			font-style: italic;
+			color: #AA0601;
+			text-align: center;
+		}
+	}
+}
+
+/* Co-Branding */
+.co-branding {
+	background-image: url(../images/index-bg.png);
+	background-size: cover;
+	background-position: center;
+	h2 {
+		color: #fff;
+	}
+	ul {
+		display: flex;
+		@include pad(){
+			display: block;
+		}
+	}
+	li {
+		width: 50%;
+		margin-bottom: 24px;
+		@include pad(){
+			width: 100%;
+		}
+
+		&.brand-1 div {
+			background-image: url(../images/home-section4-1.png);
+			@include pad(){
+				background-image: url(../images/home-section4-1-sm.png);
+			}
+		}
+		&.brand-2 div {
+			background-image: url(../images/home-section4-2.png);
+			@include pad(){
+				background-image: url(../images/home-section4-2-sm.png);
+			}
+		}
+		h3{
+			text-align: center;
+			padding-top: 8px;
+			padding-bottom: 8px;
+			background: #fff;
+			color: #AA0601;
+			font-size: 48px;
+			line-height: 72px;
+			font-style: italic;
+			font-weight: 900;
+			border-left: 1px solid #AAA;
+		}
+	}
+}
+
+
+/* recommendation */
+.recommendation ul{
+	display: flex;
+	justify-content: space-between;
+	// align-items: stretch;
+	margin-left: -12px;
+	margin-right: -12px;
+	flex-wrap: wrap;
+	li {
+		width: calc(25% - 24px);
+		margin-left: 12px;
+		margin-right: 12px;
+		border-radius: 4px;
+		border: 1px solid #DEE2E6;
+		box-shadow: 0 2px 6px 0 #00000029;
+		@include pad(){
+			width: calc(50% - 24px);
+			margin-bottom: 24px;
+		}
+		@include mobile(){
+			width: calc(100% - 24px);
+			margin-bottom: 16px;
+		}
+		.card-image {
+			height: 306px;
+		}
+		.card-content {
+			height: 205px;
+			padding: 16px;
+			display: flex;
+			flex-direction: column;
+		}
+		p {
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: 500;
+			margin-bottom: 8px;
+		}
+		.date {
+			margin-top: auto;
+			color: #707070;
+		}
+	}
+}
+.recommendation{
+	.card-1 .card-image {
+		background-image: url(../images/home-section5-1.png);
+		background-size: cover;
+		background-position: center ;
+	}
+	.card-2 .card-image {
+		background-image: url(../images/home-section5-2.png);
+		background-size: cover;
+		background-position: center ;
+	}
+	.card-3 .card-image {
+		background-image: url(../images/home-section5-3.png);
+		background-size: cover;
+		background-position: center ;
+	}
+	.card-4 .card-image {
+		background-image: url(../images/home-section5-4.png);
+		background-size: cover;
+		background-position: center ;
+	}
+}
+
+/* contact-us */
+.contact-us {
+	background-color: #FBF2F2;
+	.contact-us-container {
+		max-width: 636px;
+		margin: 0 auto;
+		padding: 0 12px;
+		@include pad(){
+			max-width: 576px;
+		}
+		@include mobile(){
+			max-width: 100%;
+		}
+	}
+	p {
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 24px;
+	}
+	label {
+		display: block;
+		margin-bottom: 8px;
+		font-size: 16px;
+		line-height: 24px;
+		&:last-of-type {
+			display: inline-block
+		}
+	}
+	input, textarea {
+		width: 100%;
+		margin-bottom: 16px;
+		border: 1px solid #000;
+		padding: 6px 12px;
+		background-color: #fff0;
+		&::placeholder {
+			color: #00000020;
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+	.contact-checkbox {
+		width: 24px;
+		height: 24px;
+		padding: 2px;
+		margin-right: 4px;
+	}
+	textarea {
+		height: 136px;
+		resize: none;
+	}
+	form button {
+		display: block;
+		margin: 48px auto 0;
+		max-width: 416px;
+		width: 100%;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		background-color: #AA0601;
+		color: #fff;
+		border: none;
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 700;
+		cursor: pointer;
+		&:hover {
+			background-color: #650300;
+		}
+	}
+}

@@ -1,0 +1,128 @@
+.collection-tabs {
+  .container {
+    @include pad {
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+}
+.collection-tabs li{
+  width: 33.33%;
+}
+.collection-tabs a {
+  padding-top: 24px;
+  padding-bottom: 16px;
+  border-bottom: 8px solid #fff;
+}
+@media(max-width: 767px) {
+  .collection-tabs a {
+      padding-top: 16px;
+      padding-bottom: 8px;
+  }
+}
+.collection-tabs a:hover, .collection-tabs a.active {
+  border-bottom: 8px solid #AA0601;
+}
+.collection-banner>div {
+  height: 296px;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+}
+@media(max-width: 992px){
+.collection-banner>div {
+  height: 136px;
+}
+}
+.optical-banner-left {
+  background-image: url(../images/product-header-1.png);
+}
+.optical-banner-right {
+  background-image: url(../images/product-header-2.png);
+}
+@media(max-width: 767px) {
+  .collection-banner {
+      height: 136px;
+  }
+  .optical-banner-left {
+      background-image: url(../images/product-header-sm-1.png);
+  }
+  .optical-banner-right {
+      background-image: url(../images/product-header-sm-2.png);
+  }
+}
+.optical-list-item a {
+  display: block;
+  height: 224px;
+  overflow: hidden;
+  &:hover div {
+    transform: scale(1.2);
+  }
+}
+.optical-list-item a div{
+  height: 224px;
+  background-size: cover;
+  background-position: center;
+
+  transition: .3s ease;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+
+.sunglasses-banner-left {
+  background-image: url(../images/product-header-3.png);
+}
+.sunglasses-banner-right {
+  background-image: url(../images/product-header-4.png);
+}
+@media(max-width: 767px) {
+  .sunglasses-banner-left {
+      background-image: url(../images/product-header-sm-3.png);
+  }
+  .sunglasses-banner-right {
+      background-image: url(../images/product-header-sm-4.png);
+  }
+}
+.sunglasses-list-item a {
+  display: block;
+  height: 224px;
+  overflow: hidden;
+  &:hover div {
+    transform: scale(1.2);
+  }
+}
+.sunglasses-list-item a div{
+  height: 224px;
+  background-size: cover;
+  background-position: center;
+
+  transition: .3s ease;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+
+
+
+.color-block div {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+.color-block-1 {
+  background-color: #5F3E2D;
+}
+.color-block-2 {
+  background-color: #B75929;
+}
+
+.pagination a {
+  border: 1px solid #555;
+}
+.pagination a:hover, .pagination a.active {
+  background: #000;
+  color: #fff;
+}

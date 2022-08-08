@@ -1,0 +1,43 @@
+---
+title: 門市據點
+layout: ./app/layout.ejs
+engine: ejs
+current: location-page
+---
+<main class="mt-96 mb-80 mt-md-80 my-sm-40">
+  <div class="container">
+    <h2 class="fz-48 lh-72 fz-sm-24 lh-sm-36 pl-16 fw-700 border-left border-8 border-primary mb-32">門市據點</h2>
+    <fieldset class="mb-40 mb-sm-24 d-flex align-items-center">
+      <label for="city" class="city-label fz-24 fz-sm-16 lh-36 lh-sm-24 mr-16 mr-sm-8">選擇地區</label>
+      <select name="city" id="city" class="fz-18 lh-26">
+        <option value="taipei">台北市</option>
+        <option value="taichung">台中市</option>
+        <option value="kaohsiung">高雄市</option>
+      </select>
+    </fieldset>
+    <div class="d-flex flex-md-column">
+      <div class="location-page-card">
+        <div class="location-page-card-image" style="background-image: url(./assets/images/store-1.png);"></div>
+        <div class="location-page-card-content border border-light">
+          <h3 class="px-24 py-8 fz-24 lh-36">台北中山旗艦店</h3>
+          <hr class="border border-light">
+          <ul class="px-24 py-16">
+            <li class="d-flex fz-20 lh-30 mb-8">
+                <span class="material-symbols-outlined mr-8" style="vertical-align: middle;">call</span>                        
+                <p>電話：(02)000-1234</p>
+            </li>
+            <li class="d-flex fz-20 lh-30 mb-8">
+                <span class="material-symbols-outlined mr-8">schedule</span>                        
+                <p>營業時間：10:00-21:00</p>
+            </li>
+            <li class="d-flex fz-20 lh-30">
+                <span class="material-symbols-outlined mr-8">location_on</span>
+                <p>地址：台北市中山區南京東路25巷2-1號</p>
+            </li>
+        </ul>
+        </div>
+      </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4622750431963!2d121.52591171559169!3d25.052316383963753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9665c221fab%3A0xe3c1d49711f01596!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuozmrrUx6Jmf!5e0!3m2!1szh-TW!2stw!4v1659333800249!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location-map"></iframe>
+    </div>
+  </div>
+</main>
